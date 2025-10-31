@@ -27,8 +27,8 @@ NAMES_TO_REDACT = [
 ]
 
 # Hardcoded directories
-INPUT_DIR = r'C:\Users\[REDACTED_NAME]\OneDrive - North Devon Homes\Documents\redact sensitive data\input'
-OUTPUT_DIR = r'C:\Users\[REDACTED_NAME]\Documents\redacted scripts'
+INPUT_DIR = r''
+OUTPUT_DIR = r''
 
 def redact_text(text, file_path):
     """Redact file paths and specific names from text."""
@@ -136,4 +136,5 @@ def main():
 
 if __name__ == "__main__":
     logging.info("Starting redaction process...")
+
     main()
